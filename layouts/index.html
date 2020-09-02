@@ -12,20 +12,4 @@
   <li><a href="posts">more</a></li>
 </ul>
 
-<a href="/images">
-  <h2>Images</h2>
-</a>
-
-<a href="/books">
-  <h2>Books</h2>
-</a>
-<ul>
-  {{ range first 5 .Site.Data.books.books }}
-  <li>
-    {{ dateFormat "Jan 2006" .date }}: {{ .title }} - <i>{{ .author }}</i>
-  </li>
-  {{ end }}
-  <li><a href="books">more</a></li>
-</ul>
-
 {{ end }}
